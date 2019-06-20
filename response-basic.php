@@ -10,7 +10,34 @@
     <div>
         <?php
             $name = $_GET["firstname"] ." ". $_GET["lastname"];
-            echo "Welcome! $name";
+            $phpgender = $_GET["gender"];
+            
+            $phpnews = $_GET["news"];
+            if ($phpnews == "yes") { 
+            echo "You will recive news letters";
+            }
+
+            $phpbuzzfeed = $_GET["buzzfeed"];
+            if ($phpbuzzfeed == "yes") { 
+            exit('NO U GAE');
+            }
+
+            elseif ($phpgender == "male") {
+            echo "<div style='color: blue';> Welcome! $name <br> <br> </div>";
+            }
+            
+            elseif ($phpgender == "female") {
+            echo "<div style='color: pink';> Welcome! $name <br> <br> </div>";   
+            }
+            
+            elseif ($phpgender == "other") {
+            echo "<div style='color: red';> Welcome! $name <br> <br> </div>";   
+            }
+            
+            $phpage = $_GET["age"];
+            echo "Age: $phpage";
+
+            
         ?>
     </div>
 </body>
