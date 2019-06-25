@@ -6,33 +6,34 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
-<body>
+<body style="background-color: navy;">
     <form method="get" action="response-basic.php">
-        <div style="font-family: Arial, Helvetica, sans-serif; padding-top: 20px;">
+        <div style="font-family: Arial, Helvetica, sans-serif; margin-left: 25%; margin-top: 5%; padding-bottom: 2%; display: flex; justify-content: center; flex-direction: column; text-align: center; 
+                    border: clear; border-radius: 20px; background-color: white; width: 50%;">
             <div>
                 <h1>Create Your Account</h1>
                 <h3>Please enter your details below</h3>
             </div>
                 <div>
-                    <p>First Name</p>
+                    <h4>First Name</h4>
                     <input type=text placeholder="Enter first name" name="firstname">
                 </div>
                     <div>
-                        <p>Last Name</p>
-                        <input type=text placeholder="Enter last name" name="lastname">
+                        <h4>Last Name</h4>
+                        <input type="text" placeholder="Enter last name" name="lastname">
                     </div>
                         <div>
-                            <p>Gender</p>
+                            <h4>Gender</h4>
                             <input type="radio" name="gender" value="male"><span>Male</span>
                             <input type="radio" name="gender" value="female"><span>Female</span>
                             <input type="radio" name="gender" value="other"><span>Other</span>
                         </div>
                         <div>
-                            <p>Buzzfeed</p>
-                            <input type="checkbox" name="buzzfeed"><span>I am subscribed to buzzfeed</span>
+                            <h4>Buzzfeed</h4>
+                            <input type="checkbox" name="buzzfeed" value="yes"><span>I am subscribed to buzzfeed</span>
                         </div>
                     <div>
-                        <p>Age</p>
+                        <h4>Age</h4>
                         <select name="age">
                         <?php
                         for($a = 1; $a <= 100; $a += 1){
@@ -42,8 +43,8 @@
                         </select>
                     </div>
                 <div>
-                    <p>News Feed</p>
-                    <input type="checkbox" name="news"><span>I want to recive news letters</span>
+                    <h4>News letters</h4>
+                    <input type="checkbox" name="news" value="yes"><span>I want to recive news letters</span>
                 </div>
             <div style="padding-top: 10px;">
                 <input type="submit" value="JOIN">

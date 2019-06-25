@@ -6,23 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
-<body>
-    <div>
+<body style="background-color: navy;"> 
+    <div style="font-family: Arial, Helvetica, sans-serif; margin-left: 38%; margin-top: 15%; padding-bottom: 1%; padding-top: 1%; display: flex; justify-content: center; flex-direction: column; text-align: center; 
+                    border: clear; border-radius: 20px; background-color: white; width: 25%;">
         <?php
             $name = $_GET["firstname"] ." ". $_GET["lastname"];
             $phpgender = $_GET["gender"];
-            
+            $phpage = $_GET["age"];
             $phpnews = $_GET["news"];
-            if ($phpnews == "yes") { 
-            echo "You will recive news letters";
-            }
-
+            
             $phpbuzzfeed = $_GET["buzzfeed"];
             if ($phpbuzzfeed == "yes") { 
-            exit('NO U GAE');
+            exit('ERROR');
             }
-
-            elseif ($phpgender == "male") {
+ 
+            if ($phpgender == "male") {
             echo "<div style='color: blue';> Welcome! $name <br> <br> </div>";
             }
             
@@ -34,9 +32,11 @@
             echo "<div style='color: red';> Welcome! $name <br> <br> </div>";   
             }
             
-            $phpage = $_GET["age"];
-            echo "Age: $phpage";
+            echo "Age: $phpage <br> <br>";
 
+            if ($phpnews == "yes") { 
+            echo "You will recive news letters";
+            }
             
         ?>
     </div>
