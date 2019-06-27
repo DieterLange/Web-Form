@@ -10,12 +10,12 @@
     <div style="font-family: Arial, Helvetica, sans-serif; margin-left: 38%; margin-top: 15%; padding-bottom: 1%; padding-top: 1%; display: flex; justify-content: center; flex-direction: column; text-align: center; 
                     border: clear; border-radius: 20px; background-color: white; width: 25%;">
         <?php
-            $name = $_GET["firstname"] ." ". $_GET["lastname"];
-            $phpgender = $_GET["gender"];
-            $phpage = $_GET["age"];
-            $phpnews = $_GET["news"];
+            $name = $_POST["firstname"] ." ". $_POST["lastname"];
+            $phpgender = $_POST["gender"];
+            $phpage = $_POST["age"];
+            $phpnews = $_POST["news"];
             
-            $phpbuzzfeed = $_GET["buzzfeed"];
+            $phpbuzzfeed = $_POST["buzzfeed"];
             if ($phpbuzzfeed == "yes") { 
             exit('ERROR');
             }
