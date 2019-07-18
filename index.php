@@ -44,7 +44,7 @@
                     </div>
                 <div>
                     <h4>News letters</h4>
-                    <input type="checkbox" name="news" value="yes"><span>I want to recive news letters</span>
+                    <input type="checkbox" name="news" value="1"><span>I want to recive news letters</span>
                 </div>
             <div style="padding-top: 10px;">
             <input type="submit" value="JOIN" style="width: 115px; height: 35px; border-radius: 10px; background-color: navy; color: white; border-color: white;"></input>

@@ -34,9 +34,11 @@
             
             echo "Age: $age <br> <br>";
 
-            if ($news == "yes") { 
+            if ($news == "1") { 
             echo "You will recive news letters <br> <br>";
             }
+
+            
             
         ?>
         
